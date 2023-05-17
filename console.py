@@ -125,6 +125,24 @@ class HBNBCommand(cmd.Cmd):
         setattr(instance, attr_name, attr_value)
         instance.save()
 
+    def do_all(self, line):
+        """
+        Retrieve all instances of a class
+        Usage: all <class name>
+        """
+        args = line.split()
+        if not args:
+            print("** class name missing **")
+            return
+
+        class_name = args[0]
+        if class_name not in valid_classes:
+            print("** class doesn't exist **")
+            return
+
+        instances = models.storage.all(class_name)
+        print([str(instance) for instance in instances.values()])
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

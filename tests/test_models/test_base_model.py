@@ -70,11 +70,13 @@ class TestBaseModel(unittest.TestCase):
         object_test = BaseModel(score=300)
         n_dict = object_test.to_dict()
 
+        object_created_at = object_test.created_at.isoformat()
+        object_updated_at = object_test.updated_at.isoformat()
         self.assertEqual(n_dict['id'], object_test.id)
         self.assertEqual(n_dict['score'], 300)
         self.assertEqual(n_dict['__class__'], 'BaseModel')
-        self.assertEqual(n_dict['created_at'], object_test.created_at.isoformat())
-        self.assertEqual(n_dict['updated_at'], object_test.updated_at.isoformat())
+        self.assertEqual(n_dict['created_at'], object_created_at)
+        self.assertEqual(n_dict['updated_at'], object_updated_at)
 
         self.assertEqual(type(n_dict['created_at']), str)
         self.assertEqual(type(n_dict['updated_at']), str)
