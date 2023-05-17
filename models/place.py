@@ -1,23 +1,11 @@
 #!/usr/bin/python3
-"""
-==========================================
-class of place in which amenity is located
-==========================================
-"""
+""" Class Place """
 
-# import module
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """
-    ================================================
-    class of place which inherite from the basemodel
-    ================================================
-
-    Description:
-        - class of place in which amenity is located 
-    """
+    """ Place class that inherits BaseModel """
     city_id = ""
     user_id = ""
     name = ""

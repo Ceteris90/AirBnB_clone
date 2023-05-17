@@ -1,19 +1,8 @@
 #!/usr/bin/python3
-"""
-======================================
-Creating the state class that inherite
-======================================
-"""
+""" Class State """
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """
-    =========================================
-    State class that inherits from BaseModel.
-    =========================================
-
-    Describe:
-        - Creating the state model for state
-    """
+    """ State class that inherits BaseModel"""
     name = ""

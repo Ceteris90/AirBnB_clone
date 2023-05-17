@@ -1,25 +1,10 @@
 #!/usr/bin/python3
-"""
-==================================================
-User class that inherites from the Basemodel class
-==================================================
-"""
-
-# import the important libraries
-from models import storage
+""" User Class """
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """
-    ==================================================
-    User class that inherites from the BaseModel class
-    ==================================================
-
-    Description:
-        - This allows for a creation of new user
-    """
-
+    """ User class that inherits BaseModel """
     email = ""
     password = ""
     first_name = ""

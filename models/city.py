@@ -1,21 +1,9 @@
 #!/usr/bin/python3
-"""
-========================================
-City class that inherits from BaseModel.
-========================================
-"""
-
-# import module
+""" Class City """
 from models.base_model import BaseModel
 
 
-class State(BaseModel):
-    """
-    ============================================
-    State class that inherite from the BaseModel
-    ============================================
-    Description:
-        - to set the user state and location
-    """
+class City(BaseModel):
+    """ City class that inherits BaseModel """
     state_id = ""
     name = ""
