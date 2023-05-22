@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/** Alx Practice Styles
+ * ------ Common style
+ */
+
+
+/* styles/3-common.css */
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Favicon */
+link[rel="icon"] {
+    type: image/png;
+    href: images/favicon.png;
+}
