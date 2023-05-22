@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/** Holberton Practice Styles
+ * ------ Common
+ */
+
+/* styles/3-footer.css */
+footer {
+    background-color: #00FF00;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    }
+    
+    footer span {
+    color: white;
+    font-size: 18px;
+    }    
