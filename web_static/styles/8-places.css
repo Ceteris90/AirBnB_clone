@@ -1,5 +1,9 @@
-/* File: styles/8-places.css */
+@charset "UTF-8";
+/** Alx Practice Styles
+ * ------ Common
+ */
 
+/* File: styles/8-places.css */
 .places {
     display: flex;
     flex-wrap: wrap;
