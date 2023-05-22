@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/** Alx Practice Styles
+ * ------ Common
+ */
+
+ /* styles/6-filters.css */
+.popover {
+    display: none;
+    position: absolute;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+    
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+    width: 100%;
+}
+    
+.locations .popover {
+    width: 25%;
+}
+    
+.popover h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 10px;
+}
+    
+.popover ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popover ul li {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+}  
