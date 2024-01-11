@@ -8,6 +8,7 @@ Unittest classes:
 import os
 import models
 import unittest
+import pep8
 from datetime import datetime
 from time import sleep
 from models.city import City
