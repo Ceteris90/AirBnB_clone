@@ -7,6 +7,7 @@ Unittest classes:
 """
 import os
 import models
+import pep8
 import unittest
 from datetime import datetime
 from time import sleep
@@ -15,6 +16,14 @@ from models.review import Review
 
 class TestReview_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Review class."""
+
+    def test_pep8(self):
+        """ Test code style """
+        pep8style = pep8.StyleGuide(quiet=True)
+        path_amenity = 'models/amenity.py'
+        result = pep8style.check_files([path_amenity])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
 
     def test_no_args_instantiates(self):
         self.assertEqual(Review, type(Review()))
